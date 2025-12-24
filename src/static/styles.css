@@ -93,11 +93,38 @@ section h3 {
 }
 
 .participants-list {
-  margin: 8px 0 0 18px;
+  margin: 8px 0 0 0;
   padding-left: 0;
-  list-style-type: disc;
   color: #333;
   font-size: 15px;
+}
+
+.participants-list.no-bullets {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.participant-email {
+  margin-right: 10px;
+}
+
+.delete-participant {
+  cursor: pointer;
+  color: #c62828;
+  font-size: 18px;
+  margin-left: 4px;
+  vertical-align: middle;
+  transition: color 0.2s;
+  padding: 2px 6px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.delete-participant:hover {
+  background: #ffebee;
+  color: #b71c1c;
+}
 }
 
 .participants-section.empty {
